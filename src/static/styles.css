@@ -3,7 +3,10 @@
 body {
   font-family: "Ubuntu", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  row-gap: 100px;
+  align-items: center;
 }
 
 .pessoa{
@@ -34,6 +37,7 @@ body {
   outline: none;
   display: flex;
   margin: 15px 0;
+  width: 100%;
 }
 
 .pessoa > a div {
@@ -51,6 +55,7 @@ body {
   font-size: 21pt;
   line-height: 21pt;
   color: #313746;
+  line-break: loose;
 }
 
 .pessoa > div {

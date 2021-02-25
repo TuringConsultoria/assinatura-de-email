@@ -6,8 +6,41 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saida</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-
+{% for key, value in pessoas.items() %}
+<section class="pessoa">
+    <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/logo.png" alt="" srcset="">
+    <h2>{{value['NOME']}}</h2>
+    <h3>Designer</h3>
+    <a href="mailto:{{value['E-MAIL']}}">
+        <div>
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/email.png" alt="">
+        </div>
+        <p>{{value['E-MAIL']}}</p>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone={{value['TELEFONE-LINK']}}">
+        <div>
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/whatsapp.png" alt="">
+        </div>
+        <p>{{value['TELEFONE']}}</p>
+    </a>
+    <div>
+        <a href="https://turing.digital/">
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/web.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/turing.digital/">
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/instagram.png" alt="">
+        </a>
+        <a href="https://www.facebook.com/turing.invest">
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/facebook.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/company/turing-digital-curitiba/">
+            <img src="https://github.com/TuringConsultoria/assinatura-de-email/raw/main/static/linkedin.png" alt="">
+        </a>
+    </div>
+</section>
+{% endfor %}
 </body>
 </html>
