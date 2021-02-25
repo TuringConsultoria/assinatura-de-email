@@ -1,4 +1,65 @@
-body{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.pessoa{
+  width: 375px;
+}
+
+.pessoa > img {
+  width: 310px;
+}
+
+.pessoa > h2 {
+  font-size: 29pt;
+  color: #7b67a9;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.pessoa > h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24pt;
+  font-weight: normal;
+  color: #62636d;
+}
+
+.pessoa > a {
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  margin: 15px 0;
+}
+
+.pessoa > a div {
+  width: 45px;
+  display: flex;
+}
+
+.pessoa > a img {
+  width: auto;
+  height: 22pt;
+}
+
+.pessoa > a p {
+  margin: 0;
+  font-size: 21pt;
+  line-height: 21pt;
+  color: #313746;
+}
+
+.pessoa > div {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pessoa > div img{
+  width: 24pt;
+  margin-right: 16px;
 }
