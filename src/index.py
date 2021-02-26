@@ -30,4 +30,4 @@ def index():
 
 
 if __name__ == "__main__":
-	app.run(port=3000)
+	app.run(host="192.168.1.103",port=3000)

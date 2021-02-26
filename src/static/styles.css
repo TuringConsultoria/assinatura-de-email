@@ -41,13 +41,15 @@ body {
 }
 
 .pessoa > a div {
-  width: 26px;
+  width: 21px;
+  margin-right: 6px;
   display: flex;
 }
 
 .pessoa > a img {
   width: auto;
-  height: 13pt;
+  height: 12pt;
+  margin: auto;
 }
 
 .pessoa > a p {
